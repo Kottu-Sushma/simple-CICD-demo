@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ARTMEUP  </title>
+  <link rel="stylesheet" href="clothing.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+  <div class="header-top">
+    <div class="brand">ArtMeUp
+    <div class="nav">
+      <div class="search-bar">
+        <input type="text" placeholder="Search for your Art...">
+      </div>
+    </div>
+  </div>
+  
+  <div class="header-bottom">
+    <nav class="categories">
+      <p>Turn Your Pic Into Art</p>
+    </nav>
+  </div>
+</header>
+
+  <!-- HERO SLIDER -->
+  <div class="slider">
+    <div class="slide active" style="background-image: url('s3.jpg');">
+      <div class="overlay-text">
+        <h2>Saree</h2>
+        <p>“Grace in every fold, beauty in every drape.” </p>
+        <button>Shop Now</button>
+      </div>
+    </div>
+    <div class="slide" style="background-image: url('s4.jpg');">
+      <div class="overlay-text">
+        <h2>Lehanga</h2>
+        <p>“The twirl of a lehenga is like a dance of elegance.”</p>
+        <button>Shop Now</button>
+      </div>
+    </div>
+    <div class="slide" style="background-image: url('s6.jpg');">
+      <div class="overlay-text">
+        <h2>Long Dresses</h2>
+        <p>Chic Outfits For Every Occasion</p>
+        <button>Shop Now</button>
+      </div>
+    </div>
+    <div class="slide" style="background-image: url('s1.jpg');">
+      <div class="overlay-text">
+        <h2>Pin Plazo</h2>
+        <p>“Flowing with grace in every step.”</p>
+        <button>Shop Now</button>
+      </div>
+    </div>
+    <div class="slide" style="background-image: url('s9.jpg');">
+      <div class="overlay-text">
+        <h2>Kurti</h2>
+        <p>“Kurti: where comfort and fashion converge to create a statement of effortless chic.”</p>
+        <button>Shop Now</button>
+      </div>
+    </div>
+    <div class="slide" style="background-image: url('s2.jpg');">
+      <div class="overlay-text">
+        <h2>Frocks</h2>
+        <p>Explore Our Signature Styles</p>
+        <button>Shop Now</button>
+      </div>
+    </div>
+  </div>
+  <!-- CARDS SECTION -->
+  <section class="section">
+    <div class="cards">
+      <div class="card">
+        <h3>Discount Offers</h3>
+        <p>Get up to 50% off on selected collections. Don’t miss out on amazing deals!</p>
+      </div>
+      <div class="card">
+        <h3>Quality Fabrics</h3>
+        <p>Premium, breathable, and sustainable fabrics for your comfort and style.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEO SECTION -->
+  <section class="video-section">
+    <h2>Discover Our Collection</h2>
+    <iframe src="vedio.mp4" title="Video Showcase" allowfullscreen></iframe>
+  </section>
+
+  <!-- SIGNATURE STYLES SECTION -->
+  <section class="section signature-styles">
+    <h2>Our Signature Styles</h2>
+    <div class="signature-cards">
+      <div class="signature-card">
+        <h3>Gorgeous Outfits</h3>
+        <p>Stunning styles that turn heads wherever you go.</p>
+      </div>
+      <div class="signature-card">
+        <h3>Good Looking Outfits</h3>
+        <p>Handpicked designs to keep you looking sharp and elegant.</p>
+      </div>
+      <div class="signature-card">
+        <h3>More Styles</h3>
+        <p>Explore our full range of signature collections.</p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const slides = document.querySelectorAll('.slide');
+    let current = 0;
+
+    function showNextSlide() {
+      slides[current].classList.remove('active');
+      current = (current + 1) % slides.length;
+      slides[current].classList.add('active');
+    }
+
+    setInterval(showNextSlide, 3000);
+  </script>
+
+</body>
+</html>
